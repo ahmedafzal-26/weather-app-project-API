@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather APP</title> 
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file for styling -->
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'> <!-- Link to Boxicons CSS for icons -->
+</head>
+<body>
+    <!-- Main container for the weather app -->
+    <div class = "container">
+        <!-- Search box for entering location -->
+        <div class = "search-box">
+            <i class = 'bx bxs-map'></i> <!-- Icon for the map -->
+            <input type="text" placeholder="Enter your Location"> <!-- Input field for location -->
+            <button class ="bx bx-search"></button> <!-- Search button with icon -->
+        </div>
+        <!-- Weather information display box -->
+        <div class="weather-box">
+            <div class="box">
+                <div class="info-weather">
+                    <div class="weather">
+                        <img src="images/cloudy.png"> <!-- Weather icon -->
+                        <p class="temperature">0<span>°C</span></p> <!-- Temperature display -->
+                        <p class="description">Broken Clouds</p> <!-- Weather description -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Additional weather details section -->
+        <div class="weather-details">
+            <!-- Humidity information -->
+            <div class="humidity">
+                <i class = 'bx bx-water'></i> <!-- Icon for humidity -->
+                <div class="text">
+                    <div class="info-humidity">
+                        <span>0%</span> <!-- Humidity value -->
+                    </div>
+                    <p>Humidity</p> <!-- Label for humidity -->
+                </div>
+            </div>
+            <!-- Wind speed information -->
+            <div class="wind">
+                <i class = 'bx bx-wind'></i> <!-- Icon for wind speed -->
+                <div class="text">
+                    <div class="info-wind">
+                        <span>0km/h</span> <!-- Wind speed value -->
+                    </div>
+                    <p>Wind Speed</p> <!-- Label for wind speed -->
+                </div>
+            </div>
+        </div>
+        <!-- Error message display for location not found -->
+        <div class="not-found">
+            <div class="box">
+                <img src="images/error.png"> <!-- Error image -->
+                <p>Oops! Location not found</p> <!-- Error message -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src = "script.js" > </script>
+
+</body>
+</html>
